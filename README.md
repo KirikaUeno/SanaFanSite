@@ -1,2 +1,0 @@
-# SanaFanSite
- my website lol
