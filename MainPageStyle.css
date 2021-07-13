@@ -1,0 +1,67 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+main{
+    margin: 0;
+}
+
+#start-img{
+    height: 450px;
+    width: 100%;
+    background-color: aliceblue;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding: 0 0 0 0;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+nav{
+    height: 100%;
+    width: 100%;
+    background-color: aliceblue;
+    margin: 0;
+    font-family: fantasy;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    padding: 0 0 0 0;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+nav .fa-github,
+nav img,
+nav .fa-telegram{
+    color: black;
+    font-size: 35px;
+    padding-right: 30px;
+}
+
+nav .fa-vk{
+    color: black;
+    font-size: 35px;
+    padding-right: 26px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+    flex-direction: column;
+}
+
+nav ul li{
+    font-size: 24px;
+    padding-top: 12px;
+    transform: 0.4s;
+}
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+}
