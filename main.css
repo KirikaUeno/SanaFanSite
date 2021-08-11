@@ -4,7 +4,13 @@ body{
 }
 
 main{
-    margin: 0;
+    height: 550px;
+    width: 100%;
+    margin-top: 48px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /*nav*/
@@ -145,15 +151,9 @@ nav i{
 
 /*main part*/
 #start-img{
-    height: 450px;
-    width: 100%;
-    background-color: aliceblue;
-    margin: 0;
+    background-color: white;
     display: flex;
     justify-content: center;
-    padding-top: 48px;
-    box-sizing: border-box;
-    z-index: 2;
 }
 
 /*bottom header*/
