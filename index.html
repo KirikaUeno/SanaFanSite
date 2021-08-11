@@ -16,7 +16,7 @@
 <body>
     <nav>
         <div id="logo-img">
-            <a href="#">
+            <a href="index.html">
                 <img src="img/appIcon.jpg" alt="logo">
                 SanaFan Website
             </a>
@@ -37,22 +37,22 @@
     <menu id="work-menu" class="slide-out-menu">
         <ul>
             <li>
-                <a href="#">
+                <a href="cvPage.php">
                     CV
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="codeProjectPage.php">
                     Code Projects
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="scienceProjectPage.php">
                     Scientific Projects
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="publicationsPage.php">
                     Publications
                 </a>
             </li>
@@ -61,12 +61,12 @@
     <menu id="hobby-menu" class="slide-out-menu">
         <ul>
             <li>
-                <a href="#">
+                <a href="javaProjectPage.php">
                     Java Game Projects
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="unityProjectPage.php">
                     Unity Game Projects
                 </a>
             </li>
