@@ -7,6 +7,143 @@ main{
     margin: 0;
 }
 
+/*nav*/
+nav{
+    height: 48px;
+    width: 100%;
+    background: rgb(26, 26, 26);
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+    margin: 0;
+    font-family: fantasy;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px 0 100px;
+    box-sizing: border-box;
+}
+
+#logo-img img{
+    height: 48px;
+    padding-right: 50px;
+}
+
+#logo-img a{
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
+
+nav a{
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    padding-left: 10px;
+    cursor: default;
+    display: flex;
+    justify-content: center;
+}
+
+nav i{
+    position: absolute;
+    right: 4px;
+}
+
+#hobby,
+#CVstuff,
+#search{
+    position: relative;
+    display: flex;
+    align-items: center;
+    color:rgb(255, 255, 255);
+}
+
+#CVstuff,
+#hobby{
+    width: 150px;
+    background-color: rgb(151, 23, 23);
+}
+
+#CVstuff{
+    position: absolute;
+    height: 100%;
+    left: 590px
+}
+
+#hobby{
+    position: absolute;
+    height: 100%;
+    left: 1180px
+}
+
+#search .fa-search{
+    position: absolute;
+    left: -27px;
+    background-color: white;
+    color:rgb(26, 26, 26);
+    height: 24px;
+    width: 24px;
+    display: flex;
+    align-items: center;
+    padding-left: 3px;
+}
+
+#search input{
+    height: 22px;
+    width: 100%;
+    border: none;
+}
+
+#search input:focus{
+    outline: none;
+}
+
+/*slide-out-menu*/
+#work-menu{
+    position: fixed;
+    top:16px;
+    left:510px;
+    display: none;
+    flex-direction: column;
+}
+
+#hobby-menu{
+    position: fixed;
+    top:16px;
+    left:1100px;
+    display: none;
+    flex-direction: column;
+}
+
+.slide-out-menu a{
+    width: 150px;
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.slide-out-menu ul{
+    list-style: none;
+}
+
+.slide-out-menu li{
+    cursor: pointer;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    height: 100%;
+    width: 150px;
+    background-color: rgb(26, 26, 26);
+}
+
+.slide-out-menu li:hover{
+    background-color: rgb(151, 23, 23);
+}
+
+/*main part*/
 #start-img{
     height: 450px;
     width: 100%;
@@ -14,16 +151,60 @@ main{
     margin: 0;
     display: flex;
     justify-content: center;
-    padding: 0 0 0 0;
+    padding-top: 48px;
     box-sizing: border-box;
     z-index: 2;
 }
 
-nav{
-    height: 100%;
-    width: 100%;
+/*bottom header*/
+#bottom-header{
+    width: 1030px;
+    height: 200px;
+    background-color: black;
+    position: relative;
+    margin: auto;
+    margin-top: 200px;
+}
+
+#placeholder-left{
+    width: 400px;
+    height: 180px;
+    position: absolute;
+    left: 10px;
+    top:10px;
     background-color: aliceblue;
-    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding: 0 0 0 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#placeholder-left p{
+    position: absolute;
+    top: 5px;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 25px;
+}
+
+#placeholder-left a{
+    position: absolute;
+    bottom: 60px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+/*social links*/
+#placeholder-right{
+    height: 180px;
+    width: 600px;
+    background-color: aliceblue;
+    position: absolute;
+    right: 10px;
+    top: 10px;
     font-family: fantasy;
     font-size: 25px;
     display: flex;
@@ -33,35 +214,43 @@ nav{
     z-index: 1;
 }
 
-nav .fa-github,
-nav img,
-nav .fa-telegram{
+#placeholder-right p{
+    position: absolute;
+    top: -5px;
+}
+
+#placeholder-right .fa-github,
+#placeholder-right img,
+#placeholder-right .fa-telegram{
     color: black;
     font-size: 35px;
     padding-right: 30px;
 }
 
-nav .fa-vk{
+#placeholder-right .fa-vk{
     color: black;
     font-size: 35px;
     padding-right: 26px;
 }
 
-nav ul{
-    display: flex;
+#placeholder-right ul{
+    position: absolute;
+    bottom: 0px;
     list-style: none;
     justify-content: center;
     padding: 0;
-    flex-direction: column;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
 }
 
-nav ul li{
+#placeholder-right ul li{
     font-size: 24px;
     padding-top: 12px;
     transform: 0.4s;
 }
 
-nav ul li a{
+#placeholder-right ul li a{
     color: black;
     text-decoration: none;
 }

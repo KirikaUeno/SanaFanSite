@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/3680e33719.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
@@ -13,37 +14,117 @@
 </head>
 
 <body>
-    <div id="start-img">
-        <img src="img/Sana.png" alt="Sana">
-    </div>
     <nav>
+        <div id="logo-img">
+            <a href="#">
+                <img src="img/appIcon.jpg" alt="logo">
+                SanaFan Website
+            </a>
+        </div>
+        <div id="CVstuff">
+            <a href="#">work menu</a>
+            <i id="work-expand" class="material-icons">expand_more</i>
+        </div>
+        <div id="hobby">
+            <a href="#">hobby menu</a>
+            <i id="hobby-expand" class="material-icons">expand_more</i>
+        </div>
+        <div id="search">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search">
+        </div>
+    </nav>
+    <menu id="work-menu" class="slide-out-menu">
         <ul>
             <li>
-                <a href="https://github.com/KirikaUeno">
-                    <i class="fab fa-github"></i>
-                    GitHub
+                <a href="#">
+                    CV
                 </a>
             </li>
             <li>
-                <a href="https://shikimori.one/SanaFan">
-                    <img src="img/Shikimori.jpg" alt="Shikimori">
-                    Shikimori
+                <a href="#">
+                    Code Projects
                 </a>
             </li>
             <li>
-                <a href="https://vk.com/id166601836">
-                    <i class="fab fa-vk"></i>
-                    VK
+                <a href="#">
+                    Scientific Projects
                 </a>
             </li>
             <li>
-                <a href="https://t.me/SanaFan">
-                    <i class="fab fa-telegram"></i>
-                    Telegram
+                <a href="#">
+                    Publications
                 </a>
             </li>
         </ul>
-    </nav>
+    </menu>
+    <menu id="hobby-menu" class="slide-out-menu">
+        <ul>
+            <li>
+                <a href="#">
+                    Java Game Projects
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Unity Game Projects
+                </a>
+            </li>
+        </ul>
+    </menu>
+
+    <main>
+        <div id="start-img">
+            <img src="img/Sana.png" alt="Sana">
+        </div>
+    </main>
+
+    <header id="bottom-header">
+        <div id="placeholder-left">
+            <p>
+                This website is hosted via Github Pages.
+                <br>
+                Link to the repository:
+            </p>
+            <a href="https://github.com/KirikaUeno/SanaFanSite">
+                <i class="fab fa-github"></i>
+                GitHub website repository
+            </a>
+        </div>
+        <div id="placeholder-right">
+            <p>
+                My social media:
+            </p>
+            <ul>
+                <li>
+                    <a href="https://github.com/KirikaUeno">
+                        <i class="fab fa-github"></i>
+                        GitHub
+                    </a>
+                </li>
+                <li>
+                    <a href="https://shikimori.one/SanaFan">
+                        <img src="img/Shikimori.jpg" alt="Shikimori">
+                        Shikimori
+                    </a>
+                </li>
+                <li>
+                    <a href="https://vk.com/id166601836">
+                        <i class="fab fa-vk"></i>
+                        VK
+                    </a>
+                </li>
+                <li>
+                    <a href="https://t.me/SanaFan">
+                        <i class="fab fa-telegram"></i>
+                        Telegram
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
