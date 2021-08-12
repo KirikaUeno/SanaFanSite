@@ -31,7 +31,7 @@ main{
     line-height: 30px;
 }
 
-.arrow {
+#arrow {
     position: absolute;
     right:210px;
     top: 230px;
@@ -40,7 +40,7 @@ main{
     z-index: 100;
 }
   
-.arrow .curve {
+#curve {
     border: 2px solid #BE5F4B;
     border-color: transparent #BE5F4B transparent transparent;
     height: 120px;
@@ -48,20 +48,20 @@ main{
     border-radius: 23% 77% 0% 100% / 30% 100% 0% 70%;
 }
   
-.arrow .point {
+#point {
     position: absolute;
     left: 100px;
     top: 120px;
 }
   
-.arrow .point:before, .arrow .point:after {
+#point:before, #point:after {
     border: 1px solid #BE5F4B;
     height: 20px;
     content: "";
     position: absolute;
 }
   
-.arrow .point:before {
+#point:before {
     top: -17px;
     left: -7px;
     transform:rotate(-45deg);
@@ -70,7 +70,7 @@ main{
     -ms-transform: rotate(-45deg);
 }
   
-.arrow .point:after {
+#point:after {
     top: -20px;
     left: 7px;
     transform:rotate(20deg);
