@@ -1,10 +1,13 @@
 body{
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
+    position:unset;
+    display: flex;
+    justify-content: center;
 }
 
 main{
-    height: 550px;
+    height: fit-content;
     width: 100%;
     margin-top: 48px;
     background-color: white;
@@ -13,7 +16,15 @@ main{
     align-items: center;
 }
 
+#center{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 main p{
+    width: fit-content;
     font-size: 20px;
     background-color: rgb(151, 23, 23);
     color: white;
@@ -23,6 +34,7 @@ main p{
     padding-right: 3px;
 }
 
+/************************************************************MAIN PAGE**************************************************************/
 #start-img{
     background-color: white;
     display: flex;
@@ -146,7 +158,30 @@ main p{
     height: 338px;
 }
 
-/*nav*/
+/*********************************************************CODE PAGE (and scientific)*******************************************************/
+main ul{
+    width: 90%;
+    height: 700px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+}
+
+main li img{
+    width: 500px;
+}
+
+main li p{
+    width: 500px;
+}
+
+main li img:hover{
+    margin-top: -10px;
+}
+
+/*********************************************************NAVIGATION MENU*******************************************************/
 nav{
     height: 48px;
     width: 100%;
@@ -238,7 +273,7 @@ nav i{
     outline: none;
 }
 
-/*slide-out-menu*/
+/*******************************************************NAVIGATION MENUS***********************************************************/
 #work-menu{
     left:590px;
     display: none;
@@ -285,14 +320,13 @@ nav i{
     background-color: rgb(151, 23, 23);
 }
 
-/*bottom header*/
+/********************************************************BOTTOM HEADER*********************************************************/
 #bottom-header{
     width: 1030px;
     height: 200px;
     background-color: black;
-    position: relative;
-    margin: auto;
-    margin-top: 200px;
+    position: absolute;
+    bottom: 0px;
 }
 
 #placeholder-left{
@@ -326,7 +360,7 @@ nav i{
     color: black;
 }
 
-/*social links*/
+/************************************************************BOTTOM HEADER SOCIAL LINKS*************************************************/
 #placeholder-right{
     height: 180px;
     width: 600px;
