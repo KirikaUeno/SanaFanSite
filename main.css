@@ -13,6 +13,16 @@ main{
     align-items: center;
 }
 
+main p{
+    font-size: 20px;
+    background-color: rgb(151, 23, 23);
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
 #start-img{
     background-color: white;
     display: flex;
@@ -21,14 +31,16 @@ main{
 
 #why-sana{
     width: 300px;
-    font-size: 20px;
     position: absolute;
     right: 300px;
     top: 200px;
-    background-color: rgb(151, 23, 23);
-    color: white;
-    text-align: center;
-    line-height: 30px;
+}
+
+#check-out{
+    width: 300px;
+    position: absolute;
+    left: 60px;
+    top: 650px;
 }
 
 #arrow {
@@ -37,7 +49,6 @@ main{
     top: 230px;
     width: 100px;
     height: 120px;
-    z-index: 100;
 }
   
 #curve {
@@ -54,7 +65,7 @@ main{
     top: 120px;
 }
   
-#point:before, #point:after {
+#point:before, #point:after, #point1:before, #point1:after {
     border: 1px solid #BE5F4B;
     height: 20px;
     content: "";
@@ -85,7 +96,54 @@ main{
     top: 360px;
     width: 640px;
     height: 420px;
-    background-color: black;
+}
+
+#arrow1 {
+    position: absolute;
+    left:60px;
+    top: 420px;
+    width: 100px;
+    height: 220px;
+}
+  
+#curve1 {
+    border: 2px solid #BE5F4B;
+    border-color: transparent transparent transparent #BE5F4B;
+    height: 220px;
+    width: 100px;
+    border-radius: 51% 49% 48% 52% / 100% 100% 0% 0%;
+}
+  
+#point1 {
+    position: absolute;
+    left: 60px;
+    top: 0px;
+}
+  
+#point1:before {
+    top: -2px;
+    left: -10px;
+    transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    -ms-transform: rotate(45deg);
+}
+  
+#point1:after {
+    top: -15px;
+    left: -11px;
+    transform:rotate(-60deg);
+    -webkit-transform: rotate(-60deg);
+    -moz-transform:rotate(-60deg);
+    -ms-transform: rotate(-60deg);
+}
+
+#check-out-gif{
+    position: absolute;
+    left: 140px;
+    top: 220px;
+    width: 600px;
+    height: 338px;
 }
 
 /*nav*/

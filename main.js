@@ -5,6 +5,9 @@ const workExpand = document.getElementById("work-expand");
 const workBotton = document.getElementById("CVstuff");
 const hobbyBotton = document.getElementById("hobby");
 
+workMenu.style.display='none';
+hobbyMenu.style.display='none';
+
 workBotton.addEventListener('mouseenter', function(){
     if(workMenu.style.display=='none'){
         workMenu.style.display='flex';
