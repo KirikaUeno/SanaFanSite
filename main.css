@@ -13,6 +13,81 @@ main{
     align-items: center;
 }
 
+#start-img{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+#why-sana{
+    width: 300px;
+    font-size: 20px;
+    position: absolute;
+    right: 300px;
+    top: 200px;
+    background-color: rgb(151, 23, 23);
+    color: white;
+    text-align: center;
+    line-height: 30px;
+}
+
+.arrow {
+    position: absolute;
+    right:210px;
+    top: 230px;
+    width: 100px;
+    height: 120px;
+    z-index: 100;
+}
+  
+.arrow .curve {
+    border: 2px solid #BE5F4B;
+    border-color: transparent #BE5F4B transparent transparent;
+    height: 120px;
+    width: 100px;
+    border-radius: 23% 77% 0% 100% / 30% 100% 0% 70%;
+}
+  
+.arrow .point {
+    position: absolute;
+    left: 100px;
+    top: 120px;
+}
+  
+.arrow .point:before, .arrow .point:after {
+    border: 1px solid #BE5F4B;
+    height: 20px;
+    content: "";
+    position: absolute;
+}
+  
+.arrow .point:before {
+    top: -17px;
+    left: -7px;
+    transform:rotate(-45deg);
+    -webkit-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+}
+  
+.arrow .point:after {
+    top: -20px;
+    left: 7px;
+    transform:rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    -moz-transform:rotate(20deg);
+    -ms-transform: rotate(20deg);
+}
+
+#sana-video{
+    position: absolute;
+    right: 40px;
+    top: 360px;
+    width: 640px;
+    height: 420px;
+    background-color: black;
+}
+
 /*nav*/
 nav{
     height: 48px;
@@ -57,8 +132,6 @@ nav i{
     right: 4px;
 }
 
-#hobby,
-#CVstuff,
 #search{
     position: relative;
     display: flex;
@@ -68,19 +141,20 @@ nav i{
 
 #CVstuff,
 #hobby{
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
     width: 150px;
     background-color: rgb(151, 23, 23);
+    color:rgb(255, 255, 255);
 }
 
 #CVstuff{
-    position: absolute;
-    height: 100%;
     left: 590px
 }
 
 #hobby{
-    position: absolute;
-    height: 100%;
     left: 1180px
 }
 
@@ -108,19 +182,20 @@ nav i{
 
 /*slide-out-menu*/
 #work-menu{
-    position: fixed;
-    top:16px;
-    left:510px;
+    left:590px;
     display: none;
-    flex-direction: column;
 }
 
 #hobby-menu{
-    position: fixed;
-    top:16px;
-    left:1100px;
+    left:1180px;
     display: none;
-    flex-direction: column;
+}
+
+.slide-out-menu{
+    width: 150px;
+    height: auto;
+    position: fixed;
+    top:32px;
 }
 
 .slide-out-menu a{
@@ -133,27 +208,23 @@ nav i{
 
 .slide-out-menu ul{
     list-style: none;
+    position:fixed;
+    display: flex;
+    flex-direction: column;
 }
 
 .slide-out-menu li{
+    margin: 0 0 0 -40px;
     cursor: pointer;
     text-align: center;
     padding-top: 2px;
     padding-bottom: 2px;
-    height: 100%;
     width: 150px;
     background-color: rgb(26, 26, 26);
 }
 
 .slide-out-menu li:hover{
     background-color: rgb(151, 23, 23);
-}
-
-/*main part*/
-#start-img{
-    background-color: white;
-    display: flex;
-    justify-content: center;
 }
 
 /*bottom header*/
