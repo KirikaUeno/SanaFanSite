@@ -39,6 +39,7 @@ main p{
     background-color: white;
     display: flex;
     justify-content: center;
+    margin-top: 48px;
 }
 
 #why-sana{
@@ -181,6 +182,63 @@ main li img:hover{
     margin-top: -10px;
 }
 
+/*********************************************************HOBBY PAGES*******************************************************/
+#left-menu{
+    position: fixed;
+    height: 100%;
+    width: 50px;
+    top:48px;
+    left:0px;
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    margin:0;
+    transition: 0.4s;
+}
+
+#left-menu ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+#left-menu li{
+    margin-top: 20px;
+}
+
+#left-menu a{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    text-decoration: none;
+    color: white;
+    height: 40px;
+}
+
+#left-menu a:hover{
+    transition: 0.4s;
+    background-color: rgb(151, 23, 23);
+    width:146px;
+}
+
+#left-menu img{
+    width: 40px;
+    height: 40px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+#left-menu p{
+    white-space: nowrap;
+    display:flex;
+    font-size: 20px;
+}
+
+#java-img img{
+    height: 416px;
+    margin-top: 48px;
+}
+
 /*********************************************************NAVIGATION MENU*******************************************************/
 nav{
     height: 48px;
@@ -285,6 +343,7 @@ nav i{
 }
 
 .slide-out-menu{
+    transition: 0.4s;
     width: 150px;
     height: auto;
     position: fixed;
