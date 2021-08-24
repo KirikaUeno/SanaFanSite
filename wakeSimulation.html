@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://www-s.mlo.me/upco/v/tb2016/tb201612/tb20161214/10f91615-31be-4d6e-a0d5-69b9dc2ac36c.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3680e33719.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+    <title>SanaFanSite</title>
+</head>
+
+<body>
+    <nav>
+        <div id="logo-img">
+            <a href="index.html">
+                <img src="img/appIcon.jpg" alt="logo">
+                SanaFan Website
+            </a>
+        </div>
+        <div id="CVstuff">
+            <a href="#">work menu</a>
+            <i id="work-expand" class="material-icons">expand_more</i>
+        </div>
+        <div id="hobby">
+            <a href="#">hobby menu</a>
+            <i id="hobby-expand" class="material-icons">expand_more</i>
+        </div>
+        <div id="search">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search">
+        </div>
+    </nav>
+    <div id="work-menu" class="slide-out-menu">
+        <ul>
+            <li>
+                <a href="cvPage.html">
+                    CV
+                </a>
+            </li>
+            <li>
+                <a href="codeProjectPage.html">
+                    Code Projects
+                </a>
+            </li>
+            <li>
+                <a href="scienceProjectPage.html">
+                    Scientific Projects
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div id="hobby-menu" class="slide-out-menu">
+        <ul>
+            <li>
+                <a href="javaProjectPage.html">
+                    Java Game Projects
+                </a>
+            </li>
+            <li>
+                <a href="unityProjectPage.html">
+                    Unity Game Projects
+                </a>
+            </li>
+        </ul>
+    </div>
+<main>
+    <div id="references">
+        <a href="https://github.com/KirikaUeno/JavaWakeSimulation">
+            <i class="fab fa-github"></i>
+            github repository
+        </a>
+    </div>
+    <p1>
+        The project is made for my accelerator beam dynamics research, so I didn't think about the deployment, so the easiest way to use it is to launch it from the IntelliJ IDEA.<br>
+        <br>All the preferences are stored in the 'Config' class. Here you can find:
+        <ul>
+            <li>1) What to do</li>
+            <li>2) How the simulation should proceed</li>
+            <li>3) The main necessary lattice parameters</li>
+        </ul>
+        <img src="img/config.png" alt="config">
+        <br>
+        'countOnlyOneIntensity' - if false, draw the spectrum for the given intensity; if true, calculate spectrum dependency on the beam intensity and save to the file. <br>
+        'lower' and 'upper' borders define the range where the program should find frequencies. <br>
+        'isMomentHistorySoloParticle' - if false, the spectrum is calculated for the dipole momentum; if true - for a single particle. <br>
+        'isFullBeamBeam' - if false, the deflection of the first-interacted pair of particles does not act on the second; if true - it does. <br>
+        'isBeamBeamInSpace' - if false, there is no magnetic fields in the interaction region; if true, the dipole magnetic field is equal to the averaged magnetic field by the turnover. <br>
+        'updateStep' - if choose 'beamBeamStep', each step will be one pair beam-beam interaction, instead of one turnover. <br>
+        'L' - not compensated solenoids rotation. <br>
+        'alfaDivSigX' - arbitrary parameter for the crossing angle. <br>
+        <br>
+        The working field of the program:
+        <img src="img/wakeSimulationMain.png" alt="wake-main" class="wake-main">
+        1, 2. two beams. The macro particles are displayed here. You can zoom in and out.<br>
+        3. switches for the axes. <br>
+        4. simulation control. Allows to view one-turn changes. <br>
+        5. wake and intensity control elements. <br>
+        6. spectrum: draw a spectrum based on the currently aquired data; spectrum count: calculate spectrum based on the config choice. <br>
+        7. switch spectrum mode - log or not. <br>
+        8. spectrum panel. You can resize it as well as zoom in and out. <br>
+        9. swap to the second mode of the program - it is not finished and not usefil. <br>
+        <br>
+        The resulting spectrum data can be found in the 'out' folder. The program can plot the spectrum dependency, but it is more convenient to use 3rd party software like Wolfram Mathematica.
+    </p1>
+</main>
+
+<script src="main.js"></script>
+</body>
+
+</html>

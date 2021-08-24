@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://www-s.mlo.me/upco/v/tb2016/tb201612/tb20161214/10f91615-31be-4d6e-a0d5-69b9dc2ac36c.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3680e33719.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+    <title>SanaFanSite</title>
+</head>
+
+<body>
+    <nav>
+        <div id="logo-img">
+            <a href="index.html">
+                <img src="img/appIcon.jpg" alt="logo">
+                SanaFan Website
+            </a>
+        </div>
+        <div id="CVstuff">
+            <a href="#">work menu</a>
+            <i id="work-expand" class="material-icons">expand_more</i>
+        </div>
+        <div id="hobby">
+            <a href="#">hobby menu</a>
+            <i id="hobby-expand" class="material-icons">expand_more</i>
+        </div>
+        <div id="search">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search">
+        </div>
+    </nav>
+    <div id="work-menu" class="slide-out-menu">
+        <ul>
+            <li>
+                <a href="cvPage.html">
+                    CV
+                </a>
+            </li>
+            <li>
+                <a href="codeProjectPage.html">
+                    Code Projects
+                </a>
+            </li>
+            <li>
+                <a href="scienceProjectPage.html">
+                    Scientific Projects
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div id="hobby-menu" class="slide-out-menu">
+        <ul>
+            <li>
+                <a href="javaProjectPage.html">
+                    Java Game Projects
+                </a>
+            </li>
+            <li>
+                <a href="unityProjectPage.html">
+                    Unity Game Projects
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div id="left-menu">
+        <ul>
+            <li>
+                <a href="plainJavaPage.html" class="left-menu-a">
+                    <img src="img/plain-java-img.png" alt="plain-java-img">
+                    <p class="left-menu-text">Plain Java</p>
+                </a>
+            </li>
+            <li>
+                <a href="libGDXPage.html" class="left-menu-a">
+                    <img src="img/libgdx.png" alt="libGDX-img">
+                    <p class="left-menu-text">LibGDX</p>
+                </a>
+            </li>
+            <li>
+                <a href="otherJavaPage.html" class="left-menu-a">
+                    <img src="img/white.png" alt="other-java-img">
+                    <p class="left-menu-text">Other</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <main>
+        <p1>
+            All my game projects pursue the goal to get closer to my ideal game. This is my first attempt of doing this, the first Java project, and the first code project at all.<br>
+            <br>
+            The idea was to make a decent walking simulator with rpg elements, but eventually I realized, that it will take a lot of time with plain Java, and the work process
+            stopped at the condition of moving sprites.<br>
+            <br>
+            Though, the project has several feaures, written fro the Java scratch: simple movement - walk and run, ejections of the map elements from each other (depending on whether
+            the element is static or not), inventory, and the most observable part of the project - A* pathfinding algorithm with a possibility to place obstacles.
+        </p1>
+        <div id="java-img">
+            <img src="img/plain-java.gif" alt="plain-java">
+        </div>
+        <div id="references">
+            <a href="https://github.com/KirikaUeno/JavaMyGame">
+                <i class="fab fa-github"></i>
+                github repository
+            </a>
+        </div>
+    </main>
+<script src="main.js"></script>
+</body>
+
+</html>

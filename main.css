@@ -4,6 +4,8 @@ body{
     position:unset;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 main{
@@ -32,6 +34,22 @@ main p{
     line-height: 30px;
     padding-left: 3px;
     padding-right: 3px;
+}
+
+main p1{
+    margin-top: 24px;
+    width: 720px;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    line-height: 30px;
+    padding-left: 3px;
+    padding-right: 3px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 /************************************************************MAIN PAGE**************************************************************/
@@ -203,6 +221,16 @@ main li img:hover{
     margin-top: -10px;
 }
 
+p1 ul{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+p1 .wake-main{
+    width: 720px;
+}
+
 /*********************************************************HOBBY PAGES*******************************************************/
 #left-menu{
     position: fixed;
@@ -258,6 +286,15 @@ main li img:hover{
 #java-img img{
     height: 416px;
     margin-top: 48px;
+}
+
+#references{
+    margin-top: 30px;
+}
+
+#references a{
+    font-size: 24px;
+    color: black;
 }
 
 /*********************************************************NAVIGATION MENU*******************************************************/
@@ -406,9 +443,9 @@ nav i{
 #bottom-header{
     width: 1030px;
     height: 200px;
+    position: relative;
+    top: 187px;
     background-color: black;
-    position: absolute;
-    bottom: 0px;
 }
 
 #placeholder-left{
