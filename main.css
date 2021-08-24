@@ -209,12 +209,17 @@ main ul{
     list-style: none;
 }
 
+main li{
+    width: 28%;
+}
+
 main li img{
-    width: 500px;
+    width: 100%;
 }
 
 main li p{
-    width: 500px;
+    width: 100%;
+    font-size: 18px;
 }
 
 main li img:hover{
@@ -295,6 +300,10 @@ p1 .wake-main{
 #references a{
     font-size: 24px;
     color: black;
+}
+
+#unity-gif{
+    margin-top: 48px;
 }
 
 /*********************************************************NAVIGATION MENU*******************************************************/
