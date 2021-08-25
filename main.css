@@ -52,6 +52,22 @@ main p1{
     flex-direction: column;
 }
 
+main p2{
+    margin-top: 24px;
+    width: 1024px;
+    font-size: 18px;
+    background-color: white;
+    color: black;
+    text-align: justify;
+    line-height: 30px;
+    padding-left: 3px;
+    padding-right: 3px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 /************************************************************MAIN PAGE**************************************************************/
 #start-img{
     background-color: white;
@@ -234,6 +250,27 @@ p1 ul{
 
 p1 .wake-main{
     width: 720px;
+}
+
+.fixed-pdf{
+    position: fixed;
+    margin-top: -48px;
+    height: 100%;
+    z-index: 150;
+}
+
+#shadow{
+    position: fixed;
+    margin-top: -48px;
+    width: 100%;
+    height: 100%;
+    z-index: 101;
+    background-color: gray;
+}
+
+#shadow p{
+    margin-top: 0px;
+    width:10%;
 }
 
 /*********************************************************HOBBY PAGES*******************************************************/

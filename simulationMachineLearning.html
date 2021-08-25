@@ -76,8 +76,47 @@
         </a>
     </div>
     <p1>
-        Description.
+        The instructions for the complete input ASTRA parameters scan process are given here. The names of files are important!
     </p1>
+    <h1>
+        Preparing the dataset (sparse scan)
+    </h1>
+    <p2>
+        First you need is to prepare the main ‘run.in’ file manually: it should be the usual ASTRA input file with the information about the initial beam distribution, 
+        aperture and the lattice elements. Make sure, that all the paths, specified in the ‘DISTRIBUTION’, ‘FILE_APERTURE’, ‘FILE_BFIELD’ and ‘FILE_EFIELD’ are valid, 
+        and set the values of all the static parameters (that you don’t want to scan) to the desired ones.<br> <br>
+        Then place the ‘batch.sh’ file into the directory with jar file (the directory is named ‘main folder’ further). It should contain the ‘Astra’ word in the last line 
+        and have ‘o_out’ and ‘e-out’ parts in the corresponding output flow files. <br> <br>
+        After that you can run the program via the command ‘java -jar runAstra.jar’, and a window with the first mode of the program should appear.<br>
+        Specify the path to your main ‘run.in’ file (with the name of the file) – it can be the full path in your system, or the path relative to the main folder. 
+        Click load file. If all done correctly, you will see the two tables – empty left (with parameters to scan) and filled with parameters right (with static parameters):
+    </p2>
+    <img src="img/runAstraFirst.png" alt="first-mode">
+    <p2>
+        By clicking on the <– button you can move selected parameters from static to ‘dynamic’ and vice-versa with the ‘–>’ button.<br>
+        You can change the values of the static parameters if you want. Specify the ranges of the dynamic parameters variations, and the scan steps if you want to make 
+        the grid-like scan, or the number of samples (in the lower-right corner) if you want to make the random scan. Keep in mind, that ‘MAXB’ parameters are displayed 
+        in Amperes with the formulae of conversion valid for the PITZ solenoid. Also make sure, that the number of simulations is not large – the DESY cluster 
+        recommends to not store over 1000 output files in one directory, and the pithon script has some problems with such big dataset creation. <br> <br>
+        At last, send the job to the cluster using one of the 2 buttons as you prefer. The command ‘qsub batch.sh’ is executed by doing this, 
+        so your main directory should have an access to the cluster.
+    </p2>
+    <h1>
+        Making predictions with ML
+    </h1>
+    <p2>
+        If your simulations were finished successfully (the output files with the shape of run1.0528.001 should appear in the min directory), launch the Java program 
+        again with the same command. Click on ‘make a prediction’ button – it will open the second mode of the program:
+    </p2>
+    <img src="img/runAstraSecond.png" alt="second-mode">
+    <p2>
+        The program needs 3 python files in the main directory, which are distributed with the main program in archive.<br><br>
+        Specify the directory of your output files and click on ‘load simulation results’. The input parameters that you variated should appear in the left table. 
+        Keep your time, the program should evaluate all the output beam properties from the output files. <br> <br>
+        After that you have a dataset and can use the ML. Change the values of the scanned input parameters to desired, and choose which output parameters you want to estimate.<br><br>
+        If you use the desired type of the ML on this dataset and with these output parameters for the first time, you should train the model first, so click one of the 
+        ‘train and predict’ button. The predicted values should appear in the right table. If you have already trained the ML model, you can use one of the ‘predict’ button.
+    </p2>
 </main>
 
 <script src="main.js"></script>
