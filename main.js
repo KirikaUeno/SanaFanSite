@@ -63,7 +63,7 @@ hobbyMenu.addEventListener('mouseleave', function(){
 
 //LEFT MENU
 
-if(page=='libGDXPage.html'||page=='libGDXPage.html'||page=='javaProjectPage.html'||page=='otherJavaPage.html'||page=='plainJavaPage.html'||page=='unityProjectCorePage.html'||page=='unityProjectEditions.html'||page=='unityProjectPage.html'){
+if(page=='libGDXPage.html'||page=='libGDXPage.html'||page=='javaProjectPage.html'||page=='otherJavaPage.html'||page=='plainJavaPage.html'||page=='unityProjectCorePage.html'||page=='unityProjectEditionsPage.html'||page=='unityProjectPage.html'){
     var leftMenuTexts = document.getElementsByClassName("left-menu-text");
     var leftMenuAs = document.getElementsByClassName("left-menu-a");
     const leftMenu = document.getElementById("left-menu");

@@ -273,6 +273,10 @@ p1 .wake-main{
     width:10%;
 }
 
+#unity-gif1{
+    margin-top: 10px;
+}
+
 /*********************************************************HOBBY PAGES*******************************************************/
 #left-menu{
     position: fixed;
@@ -341,6 +345,14 @@ p1 .wake-main{
 
 #unity-gif{
     margin-top: 48px;
+}
+
+p1 a{
+    color: #BE5F4B;
+}
+
+#windows-defender{
+    margin-top: 30px;
 }
 
 /*********************************************************NAVIGATION MENU*******************************************************/
