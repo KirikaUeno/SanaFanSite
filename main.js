@@ -105,7 +105,7 @@ if(page=='nonlinearity.html'){
         center.style.display='unset';
     });
     russian.addEventListener('click', function(){
-        iframePdf.src="assets/diplomv5.pdf";
+        iframePdf.src="https://accelconf.web.cern.ch/ipac2021/papers/mopab273.pdf";
         shadow.style.display='unset';
         center.style.display='unset';
     });
@@ -131,7 +131,7 @@ if(page=='beamBeam.html'){
     const iframePdf = document.getElementById("nonlinearity-pdf");
 
     ipac.addEventListener('click', function(){
-        iframePdf.src="assets/MOPAB274.pdf";
+        iframePdf.src="https://accelconf.web.cern.ch/ipac2021/papers/mopab274.pdf";
         shadow.style.display='unset';
         center.style.display='unset';
     });
