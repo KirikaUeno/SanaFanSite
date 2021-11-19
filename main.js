@@ -105,7 +105,7 @@ if(page=='nonlinearity.html'){
         center.style.display='unset';
     });
     russian.addEventListener('click', function(){
-        iframePdf.src="assets/diplom5.pdf";
+        iframePdf.src="assets/diplomv5.pdf";
         shadow.style.display='unset';
         center.style.display='unset';
     });
