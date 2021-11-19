@@ -1,10 +1,10 @@
 var path = window.location.pathname;
 var page = path.split("/").pop();
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+/*<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 $.getJSON('https://api.ipify.org?format=json', function(data){
     console.log(data.ip);
-});
+});*/
 
 //SLIDE-OUT MENUS
 
