@@ -1,12 +1,12 @@
 var path = window.location.pathname;
 var page = path.split("/").pop();
 
-$.getJSON('https://api.ipify.org?format=json', function(data){
+/*$.getJSON('https://api.ipify.org?format=json', function(data){
     console.log(data.ip);
     $.getJSON("http://26.84.197.219:8080/giveip?ip="+data.ip, function(){
     console.log("transfered");
 });
-});
+});*/
 
 
 //SLIDE-OUT MENUS
