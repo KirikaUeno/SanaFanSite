@@ -25,6 +25,10 @@ workBotton.addEventListener('mouseenter', function(){
     if(workMenu.style.display=='none'){
         workMenu.style.display='flex';
     }
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", "http://26.84.197.219:8080/checkhtml", false);
+    xmlHttp.send( null );
+    console.log(xmlHttp.responseText);
 });
 
 workBotton.addEventListener('mouseleave', function(){
